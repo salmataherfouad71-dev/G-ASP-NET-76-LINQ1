@@ -17,6 +17,9 @@ namespace Assignment._14
             #region Question02
             //PrintList(ProductList.Select(p=>p.ProductName));
             #endregion
+            #region Question03
+            //PrintList(ProductList.OrderBy(p => p.UnitPrice).Select(p => new { p.ProductName, p.UnitPrice }));
+            #endregion
         }
         static void PrintList<T>(IEnumerable<T> List)
         {
