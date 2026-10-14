@@ -7,7 +7,13 @@ namespace Assignment._14
     {
         static void Main(string[] args)
         {
-            
+            #region Question01
+            var result=ProductList.Where(p => p.Category== "Seafood").Select(p=> new { p.ProductName,p.UnitPrice});
+            foreach (var p in result)
+            {
+                Console.WriteLine(p);
+            }
+            #endregion
         }
     }
 }
