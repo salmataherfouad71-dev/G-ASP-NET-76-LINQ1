@@ -23,6 +23,9 @@ namespace Assignment._14
             #region Question04
             //PrintList(ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30));
             #endregion
+            #region Question05
+            //PrintList(ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments"));
+            #endregion
         }
         static void PrintList<T>(IEnumerable<T> List)
         {
