@@ -20,6 +20,9 @@ namespace Assignment._14
             #region Question03
             //PrintList(ProductList.OrderBy(p => p.UnitPrice).Select(p => new { p.ProductName, p.UnitPrice }));
             #endregion
+            #region Question04
+            //PrintList(ProductList.Where(p => p.UnitPrice >= 10 && p.UnitPrice <= 30));
+            #endregion
         }
         static void PrintList<T>(IEnumerable<T> List)
         {
