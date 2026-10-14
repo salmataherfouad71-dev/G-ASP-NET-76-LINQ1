@@ -31,6 +31,9 @@ namespace Assignment._14
             #region Question06
             //PrintList(ProductList.Select(p => new { p.ProductName, p.UnitPrice, StockStatus=(p.UnitsInStock > 0) ?"Available": "Out of Stock"}));
             #endregion
+            #region Question07
+            //PrintList(ProductList.Select((p,i)=>$"{i + 1}.{p.ProductName}"));  
+            #endregion
         }
         static void PrintList<T>(IEnumerable<T> List)
         {
