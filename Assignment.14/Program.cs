@@ -1,4 +1,6 @@
-﻿using Assignment._14.DataSources;
+﻿using System.Drawing;
+using System.Xml.Linq;
+using Assignment._14.DataSources;
 using Assignment._14.Models;
 using static Assignment._14.DataSources.Source;
 namespace Assignment._14
@@ -25,6 +27,9 @@ namespace Assignment._14
             #endregion
             #region Question05
             //PrintList(ProductList.Where(p => p.UnitsInStock > 0 && p.Category == "Spices & Condiments"));
+            #endregion
+            #region Question06
+            //PrintList(ProductList.Select(p => new { p.ProductName, p.UnitPrice, StockStatus=(p.UnitsInStock > 0) ?"Available": "Out of Stock"}));
             #endregion
         }
         static void PrintList<T>(IEnumerable<T> List)
